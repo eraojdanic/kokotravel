@@ -1,10 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .background {
+            /* The image used */
+            background-image: url('koko-banner.png');
+
+            /* Full height */
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            /* Flexbox to center content */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: white;
+            padding: 20px 40px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 8em;
+        }
+    </style>
+</head>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<div class="background">
+    <div class="banner">
+        SAJT U IZRADI
+    </div>
+</div>
 
 </body>
 </html>
-
