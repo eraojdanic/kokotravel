@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #0c0c0c;
-  background-color: #ffffff;
+  background-color: #f7f7f7;
   overflow-x: hidden;
 }
 
@@ -44,13 +44,14 @@ body {
   align-items: flex-start;
 }
 
-.heading_container h2 {
+
+.heading_container h1 {
   position: relative;
   font-weight: bold;
   margin-bottom: 0;
 }
 
-.heading_container h2 span {
+.heading_container h1 span {
   color: #5e451b;
 }
 
@@ -153,9 +154,14 @@ a:focus {
 
 .header_section .header_bottom {
   background-color: #ffffff;
-  padding: 15px 0;
+  padding: 15px 350px;
 }
 
+@media (max-width: 768px) {
+  .header_section .header_bottom {
+    padding: 15px 0;
+  }
+}
 .header_section .header_bottom .container-fluid {
   padding-right: 25px;
   padding-left: 25px;
@@ -187,7 +193,8 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link,
 .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #5e451b;
+  color: #5e1b1b;
+  text-decoration: underline;
 }
 
 .nav-item:hover {
@@ -581,16 +588,6 @@ a:focus {
   z-index: 2;
 }
 
-.about_section .img-box::before,
-.about_section .img-box::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 45px;
-  height: 70%;
-  background-color: #47522b;
-  z-index: 3;
-}
 
 .about_section .img-box::before {
   left: 0;
@@ -624,7 +621,7 @@ a:focus {
 }
 
 .about_section .detail-box a:hover {
-  background-color: #065968;
+  background-color: #32503e;
 }
 
 .position_text {
@@ -632,6 +629,11 @@ a:focus {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.position_text_mod {
+  position: relative;
+  left: 25%;
 }
 
 .track_section {
@@ -669,6 +671,7 @@ a:focus {
 
 .track_section p {
   font-size: 14px;
+  text-align: center;
   margin-top: 15px;
   margin-bottom: 25px;
 }
@@ -731,13 +734,9 @@ a:focus {
 }
 
 .track_section form button:hover {
-  background-color: #065968;
+  background-color: #686606dc;
 }
 
-.client_section .client_container {
-  width: 75%;
-  margin-top: 45px;
-}
 
 .client_section .box {
   display: -webkit-box;
@@ -835,6 +834,11 @@ a:focus {
   text-transform: uppercase;
 }
 
+.heading_container p{
+ text-align: center;
+}
+
+
 .contact_section .form_container {
   margin-right: 15px;
 }
@@ -912,7 +916,7 @@ a:focus {
 }
 
 .info_section {
-  background-image: linear-gradient(to right, #04233b, #38273c, #0c1f37);
+  background-image: linear-gradient(to right, #222c1f, #1e3018, #24351f);
   color: #ffffff;
   padding: 45px 0 15px 0;
 }
@@ -1127,6 +1131,7 @@ a:focus {
 }
 
 .cards {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -1144,10 +1149,16 @@ a:focus {
   max-height: 250px;
 }
 
+
+
 .card_image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  
+}
+.card_image > img:hover{
+  filter: brightness(80%);
 }
 
 .card_price {
@@ -1196,7 +1207,7 @@ a:focus {
 .card {
   background-color: white;
   border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 20px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -1207,19 +1218,24 @@ a:focus {
   padding: 16px 12px 32px 24px;
   margin: 16px 8px 8px 0;
   max-height: 290px;
+}
+
+.pscroll{
+  position: relative;
+  max-height: 100px;
   overflow-y: scroll;
 }
 
-.card_content::-webkit-scrollbar {
+.pscroll::-webkit-scrollbar {
   width: 8px;
 }
 
-.card_content::-webkit-scrollbar-track {
+.pscroll::-webkit-scrollbar-track {
   box-shadow: 0;
   border-radius: 0;
 }
 
-.card_content::-webkit-scrollbar-thumb {
+.pscroll::-webkit-scrollbar-thumb {
   background: #c89b3f;
   border-radius: 15px;
 }
@@ -1291,11 +1307,31 @@ hr {
 }
 
 .card-button {
+  width: 100%;
   display: inline-block;
   padding: 10px 20px;
-  background-color: #395e2d;
-  color: #fff;
+  background-color: #ffffff;
+  color: black;
   text-decoration: none;
   border-radius: 2px;
   transition: background-color 0.3s ease;
+  border: 1px solid #020202;
 }
+.card-button:hover, .card-button-details:hover{
+  background-color: #f8b542;
+  color: rgb(0, 0, 0);
+}
+
+.card-button-details {
+  margin-left: -18px;
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: black;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+  border: 1px solid #020202;
+}
+
