@@ -1,77 +1,516 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="me">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koko travel</title>
-    <link rel="shortcut icon" href="koko-logo.png" type="">
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-language" content="me" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content=" E" />
+  <meta name="description" content="Osnovna Skola Pavle Rovinski, OS Pavle Rovinski" />
+  <meta name="author" content="OS Pavle Rovinski" />
+  <link rel="shortcut icon" href="images/koko.png" type="">
 
-        .background {
-            /* The image used */
-            background-image: url('koko-banner.png');
+  <title> Koko travel </title>
 
-            /* Full height */
-            height: 100%;
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-            /* Center and scale the image nicely */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-            /* Flexbox to center content */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-        .banner {
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-            color: white;
-            padding: 20px 40px;
-            border-radius: 10px;
-            text-align: center;
-            font-size: 4em;
-            width: 80%; /* Added width to improve responsiveness */
-            max-width: 600px; /* Limit max width on larger screens */
-        }
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
 
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .banner {
-                font-size: 1.5em;
-                padding: 15px 30px;
-            }
-            .background {
-                background-image: url('new.png');
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/animated.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-            }
-        }
-
-        @media (max-width: 480px) {
-            .banner {
-                font-size: 1.2em;
-                padding: 10px 20px;
-            }
-            .banner img{
-                width: 70%;
-            }
-        }
-    </style>
 </head>
+
 <body>
 
-<div class="background">
-    <div class="banner">
-        SAJT JE U PRIPREMI
-        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGU4aGYzcTN0a2ZwdHc5d2VwODV1ZTZscmJpbndwanIxa3R6bGU2byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lP8ezu4iNVmZYOZn3j/giphy.webp">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <h1>Turisticka agencija Koko Travel</h1>
+              <img src="images/koko.png" style="width: 80%; height: 80%;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Početna <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="novosti.html">Aranzmani</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="skola.html">Ponuda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="o-nama.html"> O nama</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/florence.jpg');">
+            <div class="carousel-caption">
+              <h2>PONUDA 1</h2>
+              <p>Putujte sa nama u ponudu 1 po najpovoljnijim cijenama.</p>
+              <div class="btn-box">
+                <a href="novosti.html" class="btn1">
+                  Novosti
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/bali.jpg');">
+            <div class="carousel-caption">
+              <h2>PONUDA 2</h2>
+              <p>Putujte sa nama u ponudu 2 po najpovoljnijim cijenama.</p>
+              <div class="btn-box">
+                <a href="novosti.html" class="btn1">
+                  Novosti
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item"
+            style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/img3.jpg');">
+            <div class="carousel-caption">
+              <h2>PONUDA 3</h2>
+              <p>Putujte sa nama u ponudu 3 po najpovoljnijim cijenama.</p>
+              <div class="btn-box">
+                <a href="novosti.html" class="btn1">
+                  Novosti
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container">
+        <div class="section wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+          <img src="images/plane.png" alt="Airplane Icon">
+          <h2>Individualni avio aranžmani</h2>
+          <p>Naš stručni tim će pronaći najbolje opcije za bilo koju destinaciju u skladu sa Vašim željama.</p>
+        </div>
+        <div class="section wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+          <img src="images/plane2.png" alt="Map Icon">
+          <h2>Posvećujemo pažnju detaljima</h2>
+          <p>Ukoliko želite dodatne izlete, rent a car, transfere, drugačiji tip soba u hotelu ili bilo kakve druge
+            dodatke aranžmanu, naš tim će ispuniti sve Vaše zahtjeve.</p>
+        </div>
+        <div class="section wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+          <img src="images/island.png" alt="Ship Icon">
+          <h2>Daleke destinacije</h2>
+          <p>Planirali ste put na drugi kraj planete? Nikakav problem. Uz nas, daleke destinacije nikada nisu bile
+            bliže.</p>
+        </div>
+        <div class="section wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+          <img src="images/plane2.png" alt="Umbrella Icon">
+          <h2>Ljetovanja</h2>
+          <p>Osjetite čari svih najpoznatijih evropskih i svjetskih ljetovališta. Veliki izbor all inclusive resorta će
+            Vaš godišnji odmor učiniti u potpunosti bezbrižnim.</p>
+        </div>
+      </div>
     </div>
-</div>
+  </section>
+
+  <!-- end service section -->
+
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding-bottom">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                O <span>nama</span>
+              </h2>
+            </div>
+            <p>
+              Vaš vodič kroz sledeću avanturu.
+            </p>
+            <a href="o-nama.html">
+              Više
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 " class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+          <div class="img-box">
+            <img src="images/koko-banner.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- track section -->
+
+
+  <section class="track_section layout_padding parallax-section">
+    <div class="parallax-background"></div>
+    <div class="container">
+      <div class="row position_text">
+        <div class="col-md-12">
+          <div class="heading_container">
+            <h2 class="position_text">
+              jebenvas
+            </h2>
+          </div>
+          <p>
+            U sta sveU sta sveU sta sveU sta sveU sta sveU sta sveU sta sveU sta sveU sta sve
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- end track section -->
+
+  <!-- client section -->
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container">
+          <h2 class="position_text">
+            <span>Aranžmani</span>
+          </h2>
+          <p>
+            Aktuelni aranžmani kako vas jebemo us ta
+          </p>
+        </div>
+        <div class="row wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+          <div class="main">
+            <ul class="cards">
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image">
+                    <img src="images/florence.jpg"
+                      alt="mixed vegetable salad in a mason jar." />
+                    <span class="card_price"><span>$</span>159</span>
+                  </div>
+                  <div class="card_content">
+                    <h2 class="card_title">Toloshi Florence</h2>
+                    <div class="card_text">
+                      <p>Dig into the freshest veggies of the season! This salad-in-a-jar features a mixture of
+                        
+                      </p>
+                      <div style="display: block;">
+                        <a href="#" class="card-button">Detaljnije</a>
+                      </div>
+                        
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image">
+                    <img src="images/img3.jpg"
+                      alt="a Reuben sandwich on wax paper." />
+                    <span class="card_price"><span>$</span>229</span>
+                  </div>
+                  <div class="card_content">
+                    <h2 class="card_title">Sicilija</h2>
+                    <div class="card_text">
+                      <p>08.08.2024 - 09.09.2024
+                      </p>
+                      <hr>
+                      <p>Sicilija 7 dana uzivajmo 
+                      </p>
+                      <a href="#" class="card-button">Detaljnije</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image">
+                    <span class="note">Promo cijena</span>
+                    <img src="images/koko-banner.png"
+                      alt="A side view of a plate of figs and berries." />
+                    <span class="card_price"><span>$</span>169</span>
+                  </div>
+                  <div class="card_content">
+                    <h2 class="card_title">Danilograd</h2>
+                    <div class="card_text">
+                      <p>08.08.2024 - 09.09.2024
+                      </p>
+                      <hr>
+                      <p>Uzivajmo u svakom trenutku 7 dana uzivajmo 
+                      </p>
+                     <div class="test">
+                      <a href="#" class="card-button">Detaljnije</a>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container">
+          <h2>
+            <span>Aranžmani</span>
+          </h2>
+          <p>
+            Aktuelni aranžmani kako vas jebemo us ta
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="box">
+              <div class="card">
+                <h2 class="card-title">Sutomore</h2>
+                <img src="images/florence.jpg" alt="Description of Image" class="card-image">
+                <p class="card-text">01.09.2024. - 08.09.2024</p>
+                <p class="card-subtitle">Dodjite da se osvezimo.</p>
+                <a href="#" class="card-button">Detaljnije</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="box">
+              <div class="card">
+                <img src="images/florence.jpg" alt="Description of Image" class="card-image">
+                <h2 class="card-title">Sutomore</h2>
+                <p class="card-text">01.09.2024. - 08.09.2024</p>
+                <p class="card-subtitle">Dodjite da se osvezimo.</p>
+                <a href="#" class="card-button">Detaljnije</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="box">
+              <div class="card">
+                <h1 class="card-title">Sutomore</h1>
+                <p class="card-text">01.09.2024. - 08.09.2024</p>
+                <img src="images/florence.jpg" alt="Description of Image" class="card-image">
+
+                <p class="card-subtitle">Dodjite da se osvezimo.</p>
+                <a href="#" class="card-button">Detaljnije</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- end client section -->
+
+  <!-- contact section -->
+  <!--<section class="contact_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-5 offset-md-1">
+          <div class="heading_container">
+            <h2>
+              Contact Us
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-5 offset-md-1">
+          <div class="form_container contact-form">
+            <form action="">
+              <div>
+                <input type="text" placeholder="Your Name" />
+              </div>
+              <div>
+                <input type="text" placeholder="Phone Number" />
+              </div>
+              <div>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Message" />
+              </div>
+              <div class="btn_box">
+                <button>
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-6 px-0">
+          <div class="map_container">
+            <div class="map">
+              <div id="googleMap"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   end contact section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-lg-8 info_col">
+          <div class="info_contact">
+            <h4>
+              Adresa
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Karađorđeva 20, Podgorica, Crna Gora
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Telefon +38267
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  kokotravel.me@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4 info_col">
+          <div class="info_detail">
+            <h4>
+              Društvene mreže
+            </h4>
+            <div class="info_social">
+              <a href="https://www.facebook.com/profile.php?id=100057063926270" target="_blank">
+                <span style="margin-right: 30px;">Facebook</span>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="info_social">
+              <a href="https://www.instagram.com/kokotravel.me/" target="_blank">
+                <span style="margin-right: 30px;">Instagram</span>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> Sva prava zadrzana
+        <a href="index.html">OŠ Pavle Rovniski</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <script src="js/animation.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
 
 </body>
+
 </html>
