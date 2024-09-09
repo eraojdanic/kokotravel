@@ -525,7 +525,7 @@ a:focus {
 
 .service_section .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
   padding: 50px;
@@ -1146,10 +1146,6 @@ a:focus {
 
 }
 
-.card_image>img:hover {
-  filter: brightness(80%);
-}
-
 .card_price {
   position: absolute;
   bottom: 8px;
@@ -1329,4 +1325,19 @@ hr {
 .about-txt {
   text-align: justify;
   color: rgb(0, 0, 0);
+}
+
+.offer_date {
+  text-decoration: underline;
+  color: rgb(138, 101, 16) !important;
+}
+.note_right {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 22px 20px;
+  border-radius: 2.25rem;
+  background-color: #c89b3f;
+  font-size: 14px;
+  font-weight: 700;
 }
