@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /wp-admin/
+
+# Allow specific files or directories
+Allow: /public/
+
+# Sitemap location
+Sitemap: https://www.kokotravel.me/sitemap.xml
