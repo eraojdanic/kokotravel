@@ -1331,6 +1331,13 @@ hr {
   text-decoration: underline;
   color: rgb(138, 101, 16) !important;
 }
+.offer_date_right {
+  text-decoration: none;
+  margin: auto;
+  width: 60%;
+  color: rgb(138, 101, 16) !important;
+  font-size: 30px;
+}
 .note_right {
   position: absolute;
   top: 8px;
