@@ -1,92 +1,94 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>https://www.kokotravel.me/</loc>
-  <lastmod>2024-11-23T05:06:45+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://www.kokotravel.me/</loc>
+<lastmod>2025-01-22T15:12:45+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.kokotravel.me/nova-godina-2025</loc>
-  <lastmod>2024-11-25T14:39:27+00:00</lastmod>
-  <priority>0.95</priority>
+<loc>https://www.kokotravel.me/aranzmani</loc>
+<lastmod>2025-01-22T15:12:46+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.kokotravel.me/nova-godina-2025-budimpesta</loc>
-  <lastmod>2024-11-25T14:39:27+00:00</lastmod>
-  <priority>0.85</priority>
+<loc>https://www.kokotravel.me/aranzmani-dan-zaljubljenih</loc>
+<lastmod>2025-01-22T15:12:46+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.kokotravel.me/nova-godina-2025-pariz</loc>
-  <lastmod>2024-11-25T14:39:28+00:00</lastmod>
-  <priority>0.85</priority>
+<loc>https://www.kokotravel.me/aranzmani-8-mart</loc>
+<lastmod>2025-01-22T15:12:46+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.kokotravel.me/nova-godina-2025-rim</loc>
-  <lastmod>2024-11-25T14:39:28+00:00</lastmod>
-  <priority>0.85</priority>
+<loc>https://www.kokotravel.me/nova-godina-2025</loc>
+<lastmod>2025-01-22T15:12:46+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.kokotravel.me/aranzmani</loc>
-  <lastmod>2024-11-25T14:39:27+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.kokotravel.me/o-nama</loc>
+<lastmod>2025-01-22T15:12:46+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.kokotravel.me/o-nama</loc>
-  <lastmod>2024-11-25T14:39:27+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.kokotravel.me/kontakt</loc>
+<lastmod>2025-01-22T15:12:46+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.kokotravel.me/kontakt</loc>
-  <lastmod>2024-11-25T14:39:27+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.kokotravel.me/nova-godina-2025-budimpesta</loc>
+<lastmod>2025-01-22T15:12:47+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.kokotravel.me/koko-travel-istanbul</loc>
-  <lastmod>2024-11-23T22:37:27+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.kokotravel.me/nova-godina-2025-pariz</loc>
+<lastmod>2025-01-22T15:12:47+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.kokotravel.me/koko-travel-zagreb</loc>
-  <lastmod>2024-11-25T14:39:28+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.kokotravel.me/nova-godina-2025-rim</loc>
+<lastmod>2025-01-22T15:12:47+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.kokotravel.me/koko-travel-budimpesta</loc>
-  <lastmod>2024-11-25T14:39:28+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.kokotravel.me/koko-travel-istanbul</loc>
+<lastmod>2025-01-22T15:12:47+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.kokotravel.me/koko-travel-katanija</loc>
-  <lastmod>2024-11-25T14:39:28+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.kokotravel.me/koko-travel-zagreb</loc>
+<lastmod>2025-01-22T15:12:47+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.kokotravel.me/koko-travel-krakov</loc>
-  <lastmod>2024-11-23T22:37:23+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.kokotravel.me/koko-travel-budimpesta</loc>
+<lastmod>2025-01-22T15:12:48+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.kokotravel.me/koko-travel-atina</loc>
-  <lastmod>2024-11-25T14:39:28+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.kokotravel.me/koko-travel-katanija</loc>
+<lastmod>2025-01-22T15:12:48+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.kokotravel.me/koko-travel-pariz</loc>
-  <lastmod>2024-11-25T14:39:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.kokotravel.me/koko-travel-krakov</loc>
+<lastmod>2025-01-22T15:12:48+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.kokotravel.me/koko-travel-rim</loc>
-  <lastmod>2024-11-25T14:39:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.kokotravel.me/koko-travel-atina</loc>
+<lastmod>2025-01-22T15:12:48+00:00</lastmod>
+<priority>0.80</priority>
 </url>
-
-
+<url>
+<loc>https://www.kokotravel.me/koko-travel-pariz</loc>
+<lastmod>2025-01-22T15:12:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.kokotravel.me/koko-travel-rim</loc>
+<lastmod>2025-01-22T15:12:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
 </urlset>
