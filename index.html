@@ -147,6 +147,7 @@
     .balloon {
             position: absolute;
             bottom: -100px; /* Start at the bottom of the screen */
+            left: -100px;
             width: 120px;
             height: 200px;
             animation: floatUpAndWobble 3s linear 10s; /* Combine both animations */
@@ -280,10 +281,10 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active"
-            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/koko-travel-budimpesta.png');">
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/koko-travel-budimpesta-promo.png');">
             <div class="carousel-caption">
               <h1>Rođendanska akcija</h1>
-              <p>Koko Travel vas vodi u Budimpeštu po nikad povoljnijim cijenama</p>
+              <p>Budimpešta po nikad povoljnijim cijenama</p>
               <div class="btn-box">
                 <a href="https://www.instagram.com/p/DE2RmUdMqx_/?utm_source=ig_web_copy_link" class="btn1">
                   Detalji
@@ -292,7 +293,7 @@
             </div>
           </div>
           <div class="carousel-item"
-            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/koko-travel-milano.png');">
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/koko-travel-milano-promo.png');">
             <div class="carousel-caption">
               <h2>Grad Mode</h2>
               <p>Jesenje putovanje u predivni Milano</p>
@@ -304,7 +305,7 @@
             </div>
           </div>
           <div class="carousel-item"
-            style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/koko-travel-krakov.png');">
+            style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/koko-travel-krakov-promo.png');">
             <div class="carousel-caption">
               <h2>Koko Travel</h2>
               <p>Promotivna rođendanska ponuda za Krakov</p>
@@ -871,7 +872,7 @@
 
     // Create 10 balloons when the page loads
     window.onload = () => {
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 7; i++) {
             createBalloon();
         }
     };
