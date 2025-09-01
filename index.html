@@ -9,23 +9,27 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <meta name="keywords" content="Koko travel, Turistička agencija Podgorica, putovanja, jeftina putovanja, aranžmani, last minute ponude, letovi, turistički aranžmani" />
-  <meta name="description" content="Turistička agencija Koko Travel - Turistička agencija Podgorica, nudimo najjeftinije aranžmane za putovanja. Vaša sledeća avantura počinje ovdje. Rezervišite sada!" />
+  <meta name="keywords"
+    content="Koko travel, Turistička agencija Podgorica, putovanja, jeftina putovanja, aranžmani, last minute ponude, letovi, turistički aranžmani" />
+  <meta name="description"
+    content="Turistička agencija Koko Travel - Turistička agencija Podgorica, nudimo najjeftinije aranžmane za putovanja. Vaša sledeća avantura počinje ovdje. Rezervišite sada!" />
   <meta name="author" content="Turisticka agencija Koko Travel" />
 
   <meta property="og:url" content="https://kokotravel.me" />
   <meta property="og:title" content="Koko Travel | Turistička Agencija Podgorica" />
-  <meta property="og:description" content="Turistička agencija Koko Travel, Vaša sledeća avantura počinje ovdje. Rezervišite sada!" />
+  <meta property="og:description"
+    content="Turistička agencija Koko Travel, Vaša sledeća avantura počinje ovdje. Rezervišite sada!" />
   <meta property="og:image" content="https://kokotravel.me/images/koko.png" />
   <meta property="og:image:alt" content="Koko Travel - Vaša sledeća avantura počinje ovdje" />
 
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://kokotravel.me" />
   <meta property="twitter:title" content="Koko Travel | Turistička Agencija Podgorica" />
-  <meta property="twitter:description" content="Turistička agencija Koko Travel, Vaša sledeća avantura počinje ovdje. Rezervišite sada!" />
+  <meta property="twitter:description"
+    content="Turistička agencija Koko Travel, Vaša sledeća avantura počinje ovdje. Rezervišite sada!" />
   <meta property="twitter:image" content="https://kokotravel.me/images/koko-icon.png" />
   <meta property="twitter:image:alt" content="Koko Travel - Najbolje ponude putovanja" />
-     <script type="application/ld+json">
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "TravelAgency",
@@ -64,9 +68,129 @@
 
   <link rel="icon" href="images/koko-icon.png" type="image/png" />
 
+  <style>
+    @keyframes gradientAnimation {
+      0% {
+        background: linear-gradient(90deg, #ff4d4d, #ffcc00);
+      }
+
+      50% {
+        background: linear-gradient(90deg, #ffcc00, #ff4d4d);
+      }
+
+      100% {
+        background: linear-gradient(90deg, #ff4d4d, #ffcc00);
+      }
+    }
+
+    .promo-banner {
+      background: linear-gradient(90deg, #ff4d4d, #ffcc00);
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      position: relative;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      animation: gradientAnimation 1s ease infinite;
+    }
+
+    .promo-banner::after {
+      content: "🔥";
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .promo-banner {
+        font-size: 1.5rem;
+        padding: 15px 8px;
+      }
+    }
+
+    /* Blinking animation */
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .promo-circle {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 80px;
+      height: 80px;
+      background-color: #ff4d4d;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      animation: blink 1s ease-in-out infinite;
+    }
+
+    .balloon {
+            position: absolute;
+            bottom: -100px; /* Start at the bottom of the screen */
+            width: 120px;
+            height: 200px;
+            animation: floatUpAndWobble 3s linear 10s; /* Combine both animations */
+        }
+
+
+    /* Keyframes for making the balloon float up and wobble */
+    @keyframes floatUpAndWobble {
+      0% {
+        transform: translateY(0) rotate(0) translateX(0);
+        /* Start at the bottom with no wobble */
+        opacity: 1;
+      }
+
+      25% {
+        transform: translateY(-10%) rotate(-10deg) translateX(-10px);
+        /* Move up a little and wobble left */
+        opacity: 1;
+      }
+
+      50% {
+        transform: translateY(-20%) rotate(10deg) translateX(10px);
+        /* Move up and wobble right */
+        opacity: 1;
+      }
+
+      75% {
+        transform: translateY(-30%) rotate(-5deg) translateX(-5px);
+        /* Continue up and wobble left */
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(-100vh) rotate(0) translateX(0);
+        /* Reach the top and stop wobbling */
+        opacity: 0;
+        /* Fade out as it reaches the top */
+      }
+    }
+  </style>
+
   <title> Koko Travel | Turistička Agencija Podgorica</title>
 
-  
+
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -91,6 +215,9 @@
 </head>
 
 <body>
+  <div class="promo-banner">
+    Koko Travel Rođendanska Ultra Promo Akcija
+  </div>
 
   <div class="hero_area">
     <!-- header section strats -->
@@ -99,7 +226,7 @@
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
             <a class="navbar-brand" href="index.html">
-              <img src="images/koko.png" style="width: 80%; height: 80%;" alt="Koko Travel">
+              <img src="images/koko-promo.png" style="width: 80%; height: 80%;" alt="Koko Travel">
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -113,15 +240,8 @@
                   <a class="nav-link" href="index.html">Početna <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a 
-                    class="nav-link dropdown-toggle" 
-                    href="aranzmani.html" 
-                    id="aranzmaniDropdown" 
-                    role="button" 
-                    data-toggle="dropdown" 
-                    aria-haspopup="true" 
-                    aria-expanded="false"
-                  >
+                  <a class="nav-link dropdown-toggle" href="aranzmani.html" id="aranzmaniDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Aranžmani
                   </a>
                   <div class="dropdown-menu" aria-labelledby="aranzmaniDropdown">
@@ -162,8 +282,8 @@
           <div class="carousel-item active"
             style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/koko-travel-budimpesta.png');">
             <div class="carousel-caption">
-              <h1>Dan Državnosti 13. Jul</h1>
-              <p>Koko Travel vas vodi u Budimpeštu za Dan Državnosti</p>
+              <h1>Rođendanska akcija</h1>
+              <p>Koko Travel vas vodi u Budimpeštu po nikad povoljnijim cijenama</p>
               <div class="btn-box">
                 <a href="https://www.instagram.com/p/DE2RmUdMqx_/?utm_source=ig_web_copy_link" class="btn1">
                   Detalji
@@ -172,10 +292,10 @@
             </div>
           </div>
           <div class="carousel-item"
-            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/koko-travel-pariz.png');">
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/koko-travel-milano.png');">
             <div class="carousel-caption">
-              <h2>13. Jul</h2>
-              <p>Dan državnosti 2025 u Parizu</p>
+              <h2>Grad Mode</h2>
+              <p>Jesenje putovanje u predivni Milano</p>
               <div class="btn-box">
                 <a href="https://www.instagram.com/p/DE7hh8asSGO/?utm_source=ig_web_copy_link" class="btn1">
                   Detalji
@@ -184,10 +304,10 @@
             </div>
           </div>
           <div class="carousel-item"
-            style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/rim-nova-godina-2025.jpg');">
+            style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/koko-travel-krakov.png');">
             <div class="carousel-caption">
               <h2>Koko Travel</h2>
-              <p>Ljetovanja u svjetski poznatim destinacijama</p>
+              <p>Promotivna rođendanska ponuda za Krakov</p>
               <div class="btn-box">
                 <a href="nova-godina-2025-rim.html" class="btn1">
                   Detalji
@@ -288,7 +408,8 @@
             </h1>
           </div>
           <p>
-            Pogledajte aranžmane koje je naša turistička agencija pripremili za vas po najnijžim cijenama za ljetovanje 2025. godine i državne praznike
+            Pogledajte aranžmane koje je naša turistička agencija pripremili za vas po najnijžim cijenama za ljetovanje
+            2025. godine i državne praznike
           </p>
         </div>
       </div>
@@ -298,255 +419,15 @@
 
   <!-- end track section -->
 
-  <!-- client section -->
-  <section class="service_section layout_padding wow">
-    <div class="service_container">
-      <div class="container ">
-        <div class="heading_container">
-          <h1 class="position_text_mod">
-            Ponude Dan Državnosti
-          </h1>
- 
-          <p>
-            Jeftina Putovanja za 13. Jul Dan Državnosti - letovi iz Podgorice i Tirane
-          </p>
-        </div>
-        <div class="row">
-          <div class="main">
-            <ul class="cards">
-              <!-- first row -->
-              <li class="cards_item">
-                <div class="card">
-                    <div class="card_image">
-                        <img src="images/koko-travel-rim.png"
-                            alt="Koko Travel Let iz Tirane Rim 13. jul Dan državnosti 2025" />
-                        <span class="card_price"><span>€</span>259</span>
-                        <span class="note">Let iz Tirane</span>
-                    </div>
-                    <div class="card_content">
-                        <h2 class="card_title">Rim - 13. jul Dan državnosti 2025</h2>
-                        <div class="card_text">
-                            <p>12.07.2025 - 15.07.2025
-                            </p>
-                            <hr>
-                            <p class="pscroll">
-                                Rim 13. jul 2025 jeftina ponuda let iz Tirane sa Koko Travelom.
-                            </p>
-                            <div style="display: block;">
-                                <a href="https://www.instagram.com/p/DKZjgL8Mi2L/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                                    class="card-button">Detaljnije</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image">
-                        <img src="images/koko-travel-atina.png"
-                            alt="Koko Travel Let iz Atina Istanbul Dan državnosti 2025" />
-                        <span class="card_price"><span>€</span>269</span>
-                        <span class="note">Let iz Tirane</span>
-                    </div>
-                    <div class="card_content">
-                        <h2 class="card_title">Atina - Dan državnosti 2025</h2>
-                        <div class="card_text">
-                            <p>12.07.2025 - 15.07.2025
-                            </p>
-                            <hr>
-                            <p class="pscroll">
-                                Jeftino putovanje Za Grčku za Dan državnosti Atina
-                            </p>
-                            <div style="display: block;">
-                                <a href="https://www.instagram.com/p/DKZeEcOM2Sx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                                    class="card-button">Detaljnije</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image">
-                        <img src="images/koko-travel-valensija.webp"
-                            alt="Koko Travel Venecija 13 jul Dan državnosti 2025" />
-                        <span class="card_price"><span>€</span>269</span>
-                        <span class="note">Let iz Tirane</span>
-                    </div>
-                    <div class="card_content">
-                        <h2 class="card_title">Venecija - Dan državnosti 2025</h2>
-                        <div class="card_text">
-                            <p>12.07.2025 - 15.07.2025
-                            </p>
-                            <hr>
-                            <p class="pscroll">
-                                Dan državnosti 2025 aranzman u Veneciju sa Koko Travel turističkom
-                                agencijom.
-                            </p>
-                            <div style="display: block;">
-                                <a href="https://www.instagram.com/p/DKZjR2fsXpQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                                    class="card-button">Detaljnije</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <!-- first row -->
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image">
-                        <img src="images/koko-travel-budimpesta.png"
-                            alt="Koko Travel Let iz Podgorice Budimpesta Dan državnosti 2025" />
-                        <span class="card_price"><span>€</span>249</span>
-                        <span class="note">Let iz Podgorice</span>
-                    </div>
-                    <div class="card_content">
-                        <h2 class="card_title">Budimpesta - Dan državnosti 2025</h2>
-                        <div class="card_text">
-                            <p>10.07.2025 - 13.07.2025
-                            </p>
-                            <hr>
-                            <p class="pscroll">
-                                Budimpesta Dan državnosti 13 Jul 2025 ponuda sa Koko Travel agencijom.
-                            </p>
-                            <div style="display: block;">
-                                <a href="https://www.instagram.com/p/DKZXDAgMp4y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                                    class="card-button">Detaljnije</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image">
-                        <img src="images/koko-travel-katanija.png"
-                            alt="Koko Travel Let iz Podgorice Sicilija Dan državnosti 2025" />
-                        <span class="card_price"><span>€</span>279</span>
-                        <span class="note">Let iz Tirane</span>
-                    </div>
-                    <div class="card_content">
-                        <h2 class="card_title">Katanija - Dan državnosti 2025</h2>
-                        <div class="card_text">
-                            <p>11.07.2025 - 14.07.2025
-                            </p>
-                            <hr>
-                            <p class="pscroll">
-                                Katainja - Sicilja Dan državnosti 2025 aranžman 13 Jul.
-                            </p>
-                            <div style="display: block;">
-                                <a href="https://www.instagram.com/p/DKZjjS5MZIc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                                    class="card-button">Detaljnije</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image">
-                        <img src="images/koko-travel-perudja.png"
-                            alt="Koko Travel Peruđa Dan državnosti 2025" />
-                        <span class="card_price"><span>€</span>269</span>
-                        <span class="note">Let iz Tirane</span>
-                    </div>
-                    <div class="card_content">
-                        <h2 class="card_title">Peruđa - Dan državnosti 2025</h2>
-                        <div class="card_text">
-                            <p>12.07.2025 - 15.07.2025
-                            </p>
-                            <hr>
-                            <p class="pscroll">
-                                Dan državnosti 2025 aranzman u Peruđi sa Koko Travel turističkom
-                                agencijom.
-                            </p>
-                            <div style="display: block;">
-                                <a href="https://www.instagram.com/p/DKZeBD9M1g-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                                    class="card-button">Detaljnije</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <!--second row-->
-            
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image">
-                        <img src="images/koko-travel-bolonja.png"
-                            alt="Koko Travel Bolonja Dan državnosti 2025" />
-                        <span class="card_price"><span>€</span>259</span>
-                        <span class="note">Let iz Tirane</span>
-                    </div>
-                    <div class="card_content">
-                        <h2 class="card_title">Bolonja - Dan državnosti 2025</h2>
-                        <div class="card_text">
-                            <p>12.07.2025 - 15.07.2025
-                            </p>
-                            <hr>
-                            <p class="pscroll">
-                                Dan državnosti 2025 aranzman u Toskani sa Koko Travel turističkom
-                                agencijom.
-                            </p>
-                            <div style="display: block;">
-                                <a href="https://www.instagram.com/p/DKZd5F6scu4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                                    class="card-button">Detaljnije</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image">
-                        <img src="images/koko-travel-berlin.png"
-                            alt="Koko Travel Bolonja Dan državnosti 2025" />
-                        <span class="card_price"><span>€</span>279</span>
-                        <span class="note">Let iz Podgorice</span>
-                    </div>
-                    <div class="card_content">
-                        <h2 class="card_title">Berlin - Dan državnosti 2025</h2>
-                        <div class="card_text">
-                            <p>13.07.2025 - 16.07.2025
-                            </p>
-                            <hr>
-                            <p class="pscroll">
-                                13 jul u Berlinu sa Koko Travel
-                                agencijom.
-                            </p>
-                            <div style="display: block;">
-                                <a href="https://www.instagram.com/p/DKZXITVsjy0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                                    class="card-button">Detaljnije</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="service_section layout_padding">
     <div class="service_container">
       <div class="container ">
         <div class="heading_container">
           <h2 class="position_text_mod">
-            Aranžmani
+            Koko Travel Aranžmani
           </h2>
           <p>
-            Koko Travel aktuelni aranžmani
+            Promo aranžmani - rođendanska ponuda
           </p>
         </div>
         <div class="row wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -555,20 +436,23 @@
               <li class="cards_item">
                 <div class="card">
                   <div class="card_image">
+                    <span class="note">Let iz Podgorice</span>
                     <img src="images/koko-travel-milano.png" alt="Koko Travel Milano Jeftini Letovi" />
-                    <span class="card_price"><span>€</span>259</span>
+                    <span class="card_price"><span>€</span>185</span>
                   </div>
+                  <div class="promo-circle">PROMO</div>
                   <div class="card_content">
                     <h2 class="card_title">Milano</h2>
                     <div class="card_text">
-                       <p>21.10.2024 - 25.10.2024
+                      <p>13.11.2025 - 15.11.2025
                       </p>
                       <hr>
                       <p class="pscroll">
                         Istražite Milano, prijestonicu mode i dizajna!
                       </p>
                       <div style="display: block;">
-                        <a href="https://www.instagram.com/p/DAD-TgUsRUa/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="card-button">Detaljnije</a>
+                        <a href="https://www.instagram.com/p/DAD-TgUsRUa/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                          class="card-button">Detaljnije</a>
                       </div>
 
                     </div>
@@ -578,160 +462,19 @@
               <li class="cards_item">
                 <div class="card">
                   <div class="card_image">
-                    <img src="images/koko-travel-berlin.png" alt="Koko Travel Berlin Jeftini Letovi" />
-                    <span class="card_price"><span>€</span>229</span>
-                  </div>
-                  <div class="card_content">
-                    <h2 class="card_title">Berlin</h2>
-                    <div class="card_text">
-                       <p>22.10.2024 - 25.10.2024
-                      </p>
-                      <hr>
-                      <p class="pscroll">
-                        Istražite Berlin, grad dinamične istorije i moderne kulture!
-                      </p>
-                      <div style="display: block;">
-                        <a href="https://www.instagram.com/p/DAD-K5WMTEm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="card-button">Detaljnije</a>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image">
-                    <img src="images/koko-travel-barselona.png" alt="Koko Travel Barselona Jeftini Letovi" />
-                    <span class="card_price"><span>€</span>255</span>
-                  </div>
-                  <div class="card_content">
-                    <h2 class="card_title">Barselona</h2>
-                    <div class="card_text">
-                       <p>26.10.2024 - 29.10.2024
-                      </p>
-                      <hr>
-                      <p class="pscroll">
-                        Istražite Barselonu, grad fascinantne arhitekture i bogate kulture!
-                      </p>
-                      <div style="display: block;">
-                        <a href="https://www.instagram.com/p/DAD99bjMTCM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==l" class="card-button">Detaljnije</a>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </li>
-               <li class="cards_item">
-                <div class="card">
-                  <div class="card_image">
-                    <img src="images/koko-travel-istanbul.png" alt="Koko Travel Istanbul Jeftini Letovi" />
-                    <span class="card_price"><span>€</span>349</span>
-                  </div>
-                  <div class="card_content">
-                    <h2 class="card_title">Istanbul</h2>
-                    <div class="card_text">
-                       <p>07.11.2024 - 11.11.2024
-                      </p>
-                      <hr>
-                      <p class="pscroll">
-                        Zavirite u magični Istanbul – grad na dva kontinenta!
-                      </p>
-                      <div style="display: block;">
-                        <a href="koko-travel-istanbul.html" class="card-button">Detaljnije</a>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image">
-                    <img src="images/koko-travel-zagreb.png" alt="Koko Travel Zagreb jeftini Letovi" />
+                    <span class="note">Let iz Podgorice</span>
+                    <img src="images/koko-travel-krakov.png" alt="Koko Travel Jeftini Letovi Poljska Krakov" />
                     <span class="card_price"><span>€</span>179</span>
                   </div>
-                  <div class="card_content">
-                    <h2 class="card_title">Zagreb</h2>
-                    <div class="card_text">
-                       <p>15.10.2024 - 19.10.2024
-                      </p>
-                      <hr>
-                      <p class="pscroll">
-                        Koko travel vas vodi u predivni Zagreb!
-                      </p>
-                      <div style="display: block;">
-                        <a href="koko-travel-zagreb.html" class="card-button">Detaljnije</a>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image">
-                    <span class="note">Promo cijena</span>
-                    <img src="images/koko-travel-prag.png" alt="Koko Travel Prag Ceska Jeftini Letovi" />
-                    <span class="card_price"><span>€</span>149</span>
-                  </div>
-                  <div class="card_content">
-                    <h2 class="card_title">Prag</h2>
-                    <div class="card_text">
-                       <p>16.11.2024 - 19.11.2024
-                      </p>
-                      <hr>
-                      <p class="pscroll">
-
-                        Istražite Prag, grad zapanjujuće arhitekture i bogate istorije! 
-                      </p>
-                      <div style="display: block;">
-                        <a href="koko-travel-budimpesta.html" class="card-button">Detaljnije</a>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image">
-                    <span class="note">Promo cijena</span>
-                    <img src="images/koko-travel-katanija.png" alt="Koko Travel Jeftini Letovi" />
-                    <span class="card_price"><span>€</span>169</span>
-                  </div>
-                  <div class="card_content">
-                    <h2 class="card_title">Katanija</h2>
-                    <div class="card_text">
-                      <p>13.11.2024 - 16.11.2024
-                      </p>
-                      <hr>
-                      <p class="pscroll">
-
-                        Koko travel sa vama u srce Sicilije.
-                      
-                      </p>
-                      <a href="koko-travel-katanija.html" class="card-button">Detaljnije</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image">
-                    <span class="note">Promo cijena</span>
-                    <img src="images/koko-travel-krakov.png" alt="Koko Travel Jeftini Letovi" />
-                    <span class="card_price"><span>€</span>119</span>
-                  </div>
+                  <div class="promo-circle">PROMO</div>
                   <div class="card_content">
                     <h2 class="card_title">Krakov</h2>
                     <div class="card_text">
-                      <p>18.11.2024 - 21.11.2024
+                      <p>22.10.2025 - 25.10.2025
                       </p>
                       <hr>
                       <p class="pscroll">
-
-                        Koko travel sa vama u bajkoviti Krakov.
-                      
+                        Koko Travel sa vama u bajkoviti Krakov.
                       </p>
                       <a href="koko-travel-krakov.html" class="card-button">Detaljnije</a>
                     </div>
@@ -741,37 +484,15 @@
               <li class="cards_item">
                 <div class="card">
                   <div class="card_image">
-                    <span class="note">Promo cijena</span>
-                    <img src="images/koko-travel-atina.png" alt="Koko Travel Jeftini Letovi" />
-                    <span class="card_price"><span>€</span>209</span>
-                  </div>
-                  <div class="card_content">
-                    <h2 class="card_title">Atina</h2>
-                    <div class="card_text">
-                      <p>15.11.2024 - 19.11.2024
-                      </p>
-                      <hr>
-                      <p class="pscroll">
-
-                        Koko travel sa vama u kolijevku kulture.
-                      
-                      </p>
-                      <a href="koko-travel-atina.html" class="card-button">Detaljnije</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image">
-                    <span class="note">Promo cijena</span>
+                    <span class="note">Let iz Podgorice</span>
                     <img src="images/koko-travel-budimpesta.png" alt="Koko Travel Jeftini Letovi" />
-                    <span class="card_price"><span>€</span>179</span>
+                    <span class="card_price"><span>€</span>139</span>
                   </div>
+                  <div class="promo-circle">PROMO</div>
                   <div class="card_content">
                     <h2 class="card_title">Budimpešta</h2>
                     <div class="card_text">
-                       <p>11.11.2024 - 15.11.2024
+                      <p>15.11.2025 - 18.11.2025
                       </p>
                       <hr>
                       <p class="pscroll">
@@ -786,50 +507,240 @@
                   </div>
                 </div>
               </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+
+  <!-- client section -->
+  <section class="service_section layout_padding wow">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container">
+          <h1 class="position_text_mod">
+            Ponude Dan Državnosti
+          </h1>
+
+          <p>
+            Jeftina Putovanja za 13. Jul Dan Državnosti - letovi iz Podgorice i Tirane
+          </p>
+        </div>
+        <div class="row">
+          <div class="main">
+            <ul class="cards">
+              <!-- first row -->
               <li class="cards_item">
                 <div class="card">
                   <div class="card_image">
-                    <span class="note">Promo cijena</span>
-                    <img src="images/koko-travel-pariz.png" alt="Koko Travel Jeftini Letovi" />
-                    <span class="card_price"><span>€</span>189</span>
+                    <img src="images/koko-travel-rim.png"
+                      alt="Koko Travel Let iz Tirane Rim 13. jul Dan državnosti 2025" />
+                    <span class="card_price"><span>€</span>259</span>
+                    <span class="note">Let iz Tirane</span>
                   </div>
                   <div class="card_content">
-                    <h2 class="card_title">Pariz</h2>
+                    <h2 class="card_title">Rim - 13. jul Dan državnosti 2025</h2>
                     <div class="card_text">
-                      <p>13.11.2024 - 16.11.2024
+                      <p>12.07.2025 - 15.07.2025
                       </p>
                       <hr>
                       <p class="pscroll">
-
-                        Koko travel vas vodi u grad svjetlosti.
-                      
+                        Rim 13. jul 2025 jeftina ponuda let iz Tirane sa Koko Travelom.
                       </p>
-                      <a href="koko-travel-pariz.html" class="card-button">Detaljnije</a>
+                      <div style="display: block;">
+                        <a href="https://www.instagram.com/p/DKZjgL8Mi2L/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                          class="card-button">Detaljnije</a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image">
+                    <img src="images/koko-travel-atina.png"
+                      alt="Koko Travel Let iz Atina Istanbul Dan državnosti 2025" />
+                    <span class="card_price"><span>€</span>269</span>
+                    <span class="note">Let iz Tirane</span>
+                  </div>
+                  <div class="card_content">
+                    <h2 class="card_title">Atina - Dan državnosti 2025</h2>
+                    <div class="card_text">
+                      <p>12.07.2025 - 15.07.2025
+                      </p>
+                      <hr>
+                      <p class="pscroll">
+                        Jeftino putovanje Za Grčku za Dan državnosti Atina
+                      </p>
+                      <div style="display: block;">
+                        <a href="https://www.instagram.com/p/DKZeEcOM2Sx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                          class="card-button">Detaljnije</a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image">
+                    <img src="images/koko-travel-valensija.webp"
+                      alt="Koko Travel Venecija 13 jul Dan državnosti 2025" />
+                    <span class="card_price"><span>€</span>269</span>
+                    <span class="note">Let iz Tirane</span>
+                  </div>
+                  <div class="card_content">
+                    <h2 class="card_title">Venecija - Dan državnosti 2025</h2>
+                    <div class="card_text">
+                      <p>12.07.2025 - 15.07.2025
+                      </p>
+                      <hr>
+                      <p class="pscroll">
+                        Dan državnosti 2025 aranzman u Veneciju sa Koko Travel turističkom
+                        agencijom.
+                      </p>
+                      <div style="display: block;">
+                        <a href="https://www.instagram.com/p/DKZjR2fsXpQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                          class="card-button">Detaljnije</a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- first row -->
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image">
+                    <img src="images/koko-travel-budimpesta.png"
+                      alt="Koko Travel Let iz Podgorice Budimpesta Dan državnosti 2025" />
+                    <span class="card_price"><span>€</span>249</span>
+                    <span class="note">Let iz Podgorice</span>
+                  </div>
+                  <div class="card_content">
+                    <h2 class="card_title">Budimpesta - Dan državnosti 2025</h2>
+                    <div class="card_text">
+                      <p>10.07.2025 - 13.07.2025
+                      </p>
+                      <hr>
+                      <p class="pscroll">
+                        Budimpesta Dan državnosti 13 Jul 2025 ponuda sa Koko Travel agencijom.
+                      </p>
+                      <div style="display: block;">
+                        <a href="https://www.instagram.com/p/DKZXDAgMp4y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                          class="card-button">Detaljnije</a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image">
+                    <img src="images/koko-travel-katanija.png"
+                      alt="Koko Travel Let iz Podgorice Sicilija Dan državnosti 2025" />
+                    <span class="card_price"><span>€</span>279</span>
+                    <span class="note">Let iz Tirane</span>
+                  </div>
+                  <div class="card_content">
+                    <h2 class="card_title">Katanija - Dan državnosti 2025</h2>
+                    <div class="card_text">
+                      <p>11.07.2025 - 14.07.2025
+                      </p>
+                      <hr>
+                      <p class="pscroll">
+                        Katainja - Sicilja Dan državnosti 2025 aranžman 13 Jul.
+                      </p>
+                      <div style="display: block;">
+                        <a href="https://www.instagram.com/p/DKZjjS5MZIc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                          class="card-button">Detaljnije</a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image">
+                    <img src="images/koko-travel-perudja.png" alt="Koko Travel Peruđa Dan državnosti 2025" />
+                    <span class="card_price"><span>€</span>269</span>
+                    <span class="note">Let iz Tirane</span>
+                  </div>
+                  <div class="card_content">
+                    <h2 class="card_title">Peruđa - Dan državnosti 2025</h2>
+                    <div class="card_text">
+                      <p>12.07.2025 - 15.07.2025
+                      </p>
+                      <hr>
+                      <p class="pscroll">
+                        Dan državnosti 2025 aranzman u Peruđi sa Koko Travel turističkom
+                        agencijom.
+                      </p>
+                      <div style="display: block;">
+                        <a href="https://www.instagram.com/p/DKZeBD9M1g-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                          class="card-button">Detaljnije</a>
+                      </div>
+
                     </div>
                   </div>
                 </div>
               </li>
 
+              <!--second row-->
+
               <li class="cards_item">
                 <div class="card">
                   <div class="card_image">
-                    <span class="note">Promo cijena</span>
-                    <img src="images/koko-travel-rim.png" alt="Koko Travel Jeftini Letovi" />
-                    <span class="card_price"><span>€</span>169</span>
+                    <img src="images/koko-travel-bolonja.png" alt="Koko Travel Bolonja Dan državnosti 2025" />
+                    <span class="card_price"><span>€</span>259</span>
+                    <span class="note">Let iz Tirane</span>
                   </div>
                   <div class="card_content">
-                    <h2 class="card_title">Rim</h2>
+                    <h2 class="card_title">Bolonja - Dan državnosti 2025</h2>
                     <div class="card_text">
-                      <p>12.11.2024 - 15.11.2024
+                      <p>12.07.2025 - 15.07.2025
                       </p>
                       <hr>
                       <p class="pscroll">
-
-                        Koko travel sa vama u vjecni grad.
-                      
+                        Dan državnosti 2025 aranzman u Toskani sa Koko Travel turističkom
+                        agencijom.
                       </p>
-                      <a href="koko-travel-rim.html" class="card-button">Detaljnije</a>
+                      <div style="display: block;">
+                        <a href="https://www.instagram.com/p/DKZd5F6scu4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                          class="card-button">Detaljnije</a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image">
+                    <img src="images/koko-travel-berlin.png" alt="Koko Travel Bolonja Dan državnosti 2025" />
+                    <span class="card_price"><span>€</span>279</span>
+                    <span class="note">Let iz Podgorice</span>
+                  </div>
+                  <div class="card_content">
+                    <h2 class="card_title">Berlin - Dan državnosti 2025</h2>
+                    <div class="card_text">
+                      <p>13.07.2025 - 16.07.2025
+                      </p>
+                      <hr>
+                      <p class="pscroll">
+                        13 jul u Berlinu sa Koko Travel
+                        agencijom.
+                      </p>
+                      <div style="display: block;">
+                        <a href="https://www.instagram.com/p/DKZXITVsjy0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                          class="card-button">Detaljnije</a>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -926,6 +837,45 @@
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
+
+ <script>
+    // Function to create a balloon element (image)
+    function createBalloon() {
+        const balloonContainer = document.createElement('div');
+        balloonContainer.classList.add('balloon');
+
+        // Set random horizontal position for each balloon
+        const startX = Math.random() * window.innerWidth;
+        const startDelay = Math.random() * 2;  // Random delay to stagger the appearance of balloons
+
+        balloonContainer.style.left = `${startX}px`;  // Position horizontally
+        balloonContainer.style.animationDelay = `${startDelay}s`;  // Random delay for staggered start
+
+        // Add an image inside the balloon container
+        const balloonImage = document.createElement('img');
+        balloonImage.src = 'images/baloni.png';  // Replace with the URL of your balloon image
+        balloonImage.alt = 'Balloon';
+        balloonImage.style.width = '100%';  // Scale the image to fit the container
+        balloonImage.style.height = '100%';
+
+        balloonContainer.appendChild(balloonImage); // Add the image to the balloon container
+
+        // Append the balloon to the body
+        document.body.appendChild(balloonContainer);
+
+        // Remove the balloon after animation ends
+        balloonContainer.addEventListener('animationend', () => {
+            balloonContainer.remove();
+        });
+    }
+
+    // Create 10 balloons when the page loads
+    window.onload = () => {
+        for (let i = 0; i < 10; i++) {
+            createBalloon();
+        }
+    };
+</script>
   <!-- End Google Map -->
 
 </body>
