@@ -2,8 +2,8 @@
   "cleanUrls": true
    "redirects": [
     {
-      "source": "/nova-godina-2025.html",
-      "destination": "/nova-godina-2026.html",
+      "source": "/nova-godina-2025",
+      "destination": "/nova-godina-2026",
       "permanent": true
     }
   ]
