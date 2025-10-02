@@ -14,10 +14,10 @@
 </head>
 <body>
   <form id="contact-form">
-    <input type="text" name="from_name" placeholder="Your Name" required>
-    <input type="email" name="reply_to" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit">Send</button>
+    <p><strong>Name:</strong> {{from_name}}</p>
+<p><strong>Email:</strong> {{reply_to}}</p>
+<p><strong>Message:</strong></p>
+<p>{{message}}</p>
   </form>
 
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
