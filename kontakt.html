@@ -240,10 +240,16 @@
             <div class="form-container">
               <h3>Pišite nam</h3>
               <form id="contact-form">
-                <input type="text" id="name"  name="name" placeholder="Ime i prezime" required />
-                <input type="email"  id="email" name="email" placeholder="Vaša e-mail adresa" required />
-                <textarea placeholder="Poruka" id="message" name="message" required></textarea>
-                <button type="submit">Pošalji</button>
+                <label for="name">Name:</label><br />
+                <input type="text" id="name" name="name" required /><br />
+
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" name="email" required /><br />
+
+                <label for="message">Message:</label><br />
+                <textarea id="message" name="message" required></textarea><br />
+
+                <button type="submit">Send</button>
               </form>
             </div>
 
@@ -367,16 +373,16 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
-     <!-- Include EmailJS SDK -->
+  <!-- Include EmailJS SDK -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script>
-    (function() {
+    (function () {
       emailjs.init('yt6rnCds2y23GJy0z'); // Replace with your Public Key
     })();
 
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
       event.preventDefault();
-      
+
       emailjs.sendForm('service_f34djqq', 'template_bmicrlg', this)
         .then(() => {
           alert('Message sent successfully!');
