@@ -9,20 +9,24 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <meta name="keywords" content="Koko travel, Turistička agencija, putovanja, jeftina putovanja, aranžmani, last minute ponude, letovi, turistički aranžmani" />
-  <meta name="description" content="Turistička agencija Koko Travel - Nudimo najjeftinije aranžmane za putovanja. Vaša sledeća avantura počinje ovdje. Rezervišite sada!" />
+  <meta name="keywords"
+    content="Koko travel, Turistička agencija, putovanja, jeftina putovanja, aranžmani, last minute ponude, letovi, turistički aranžmani" />
+  <meta name="description"
+    content="Turistička agencija Koko Travel - Nudimo najjeftinije aranžmane za putovanja. Vaša sledeća avantura počinje ovdje. Rezervišite sada!" />
   <meta name="author" content="Turisticka agencija Koko Travel" />
 
   <meta property="og:url" content="https://kokotravel.me" />
   <meta property="og:title" content="Koko Travel | Turistička Agencija Podgorica" />
-  <meta property="og:description" content="Turistička agencija Koko Travel, Vaša sledeća avantura počinje ovdje. Rezervišite sada!" />
+  <meta property="og:description"
+    content="Turistička agencija Koko Travel, Vaša sledeća avantura počinje ovdje. Rezervišite sada!" />
   <meta property="og:image" content="https://kokotravel.me/images/koko.png" />
   <meta property="og:image:alt" content="Koko Travel - Vaša sledeća avantura počinje ovdje" />
 
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://kokotravel.me" />
   <meta property="twitter:title" content="Koko Travel | Turistička Agencija Podgorica" />
-  <meta property="twitter:description" content="Turistička agencija Koko Travel, Vaša sledeća avantura počinje ovdje. Rezervišite sada!" />
+  <meta property="twitter:description"
+    content="Turistička agencija Koko Travel, Vaša sledeća avantura počinje ovdje. Rezervišite sada!" />
   <meta property="twitter:image" content="https://kokotravel.me/images/koko.png" />
   <meta property="twitter:image:alt" content="Koko Travel - Najbolje ponude putovanja" />
 
@@ -51,6 +55,124 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 500;
+    }
+
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      background: #f1f5f9;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .form-container {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .form-container h3 {
+      margin-bottom: 20px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    form textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    form button {
+      background: #395e2d;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background: #395e2d;
+    }
+
+    .map-container {
+      flex: 1;
+      min-width: 300px;
+      height: 100%;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 40px;
+      text-align: center;
+      gap: 20px;
+    }
+
+    .contact-info div {
+      flex: 1 1 200px;
+      padding: 10px;
+    }
+
+    .contact-info i {
+      font-size: 24px;
+      color: #395e2d;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .contact-info a {
+      color: #395e2d;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+  </style>
 
 </head>
 
@@ -77,15 +199,8 @@
                   <a class="nav-link" href="index.html">Početna </span></a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a 
-                    class="nav-link dropdown-toggle" 
-                    href="aranzmani.html" 
-                    id="aranzmaniDropdown" 
-                    role="button" 
-                    data-toggle="dropdown" 
-                    aria-haspopup="true" 
-                    aria-expanded="false"
-                  >
+                  <a class="nav-link dropdown-toggle" href="aranzmani.html" id="aranzmaniDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Aranžmani
                   </a>
                   <div class="dropdown-menu" aria-labelledby="aranzmaniDropdown">
@@ -116,41 +231,111 @@
   <section class="contact_section layout_padding-top">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-4 col-md-5 offset-md-1">
-          <div class="heading_container">
-            <h2>
-              Kontakt info
-            </h2>
-          </div>
-        </div>
+         <div class="container">
+    <h2>Contact Form #06</h2>
+
+    <div class="contact-wrapper">
+      <div class="form-container">
+        <h3>Contact Us</h3>
+        <form>
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Subject" required />
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
       </div>
-      <div class="row wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+
+      <div class="map-container">
+        <iframe
+          src="https://maps.google.com/maps?q=New+York,+NY,+USA&output=embed"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="contact-info">
+      <div>
+        <i class="fas fa-map-marker-alt"></i>
+        <p><strong>Address:</strong> 198 West 21th Street, Suite 721 New York NY 10016</p>
+      </div>
+      <div>
+        <i class="fas fa-phone"></i>
+        <p><strong>Phone:</strong> <a href="tel:+1235235598">+1235 2355 98</a></p>
+      </div>
+      <div>
+        <i class="fas fa-paper-plane"></i>
+        <p><strong>Email:</strong> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+      </div>
+      <div>
+        <i class="fas fa-globe"></i>
+        <p><strong>Website:</strong> <a href="#">yoursite.com</a></p>
+      </div>
+    </div>
+  </div>
         <div class="col-lg-4 col-md-5 offset-md-1">
           <div class="form_container">
-            
-              <div>
-                <h3 style="color: #395e2d;">Broj telefona</h3>
-                <h4>(+382) 067 737 720</h4>
-              </div>
-              <br>
-              <div>
-                <h3 style="color: #395e2d;">E-mail adresa</h3>
-                <h4>kokotavel.me@gmail.com</h4>
-              </div>
-              <br>
-              <div>
-                <h3 style="color: #395e2d;">Adresa</h3>
-                <h4>Karađorđeva 20, Podgorica, Crna Gora</h4>
-              </div>
-            
-            
+
+            <div>
+              <h3 style="color: #395e2d;">Broj telefona</h3>
+              <h4>(+382) 067 737 720</h4>
+            </div>
+            <br>
+            <div>
+              <h3 style="color: #395e2d;">E-mail adresa</h3>
+              <h4>kokotavel.me@gmail.com</h4>
+            </div>
+            <br>
+            <div>
+              <h3 style="color: #395e2d;">Adresa</h3>
+              <h4>Karađorđeva 20, Podgorica, Crna Gora</h4>
+            </div>
+
+
           </div>
         </div>
+      
         <div class="col-lg-7 col-md-6 px-0">
           <div class="map_container">
             <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11777.534315766135!2d19.2599017!3d42.4408541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134debcd277d0b1f%3A0x4e65feb2e5267807!2sKoko%20Travel%20%7C%20kokotravel.me!5e0!3m2!1sen!2s!4v1726152314328!5m2!1sen!2s" width="800" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11777.534315766135!2d19.2599017!3d42.4408541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134debcd277d0b1f%3A0x4e65feb2e5267807!2sKoko%20Travel%20%7C%20kokotravel.me!5e0!3m2!1sen!2s!4v1726152314328!5m2!1sen!2s"
+                width="800" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+          </div>
+        </div>
+        <div class="col-lg- col-md-5 offset-md-1">
+          <div class="form_container">
+
+            <div>
+                <form id="contact-form">
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" required /><br />
+    
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" required /><br />
+    
+    <label for="message">Message:</label><br />
+    <textarea id="message" name="message" required></textarea><br />
+    
+    <button type="submit">Send</button>
+  </form>
+
+            </div>
+            <br>
+            <div>
+              <h3 style="color: #395e2d;">E-mail adresa</h3>
+              <h4>kokotavel.me@gmail.com</h4>
+            </div>
+            <br>
+            <div>
+              <h3 style="color: #395e2d;">Adresa</h3>
+              <h4>Karađorđeva 20, Podgorica, Crna Gora</h4>
+            </div>
+
+
           </div>
         </div>
       </div>
@@ -230,8 +415,9 @@
   <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
   <!-- bootstrap js -->
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <!-- owl slider -->
