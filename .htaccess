@@ -1,5 +1,4 @@
 
-Redirect 301 /ads.txt https://srv.adstxtmanager.com/19390/kokotravel.me
 
 ErrorDocument 404 http://www.kokotravel.me/404.html
 
