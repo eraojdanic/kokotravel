@@ -38,3 +38,9 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+// Preloader script
+$(window).on('load', function() {
+    setTimeout(function() {
+        $('#preloader').addClass('loaded');
+    }, 500); // optional specific delay, else just empty the timeout or add class
+});

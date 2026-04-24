@@ -493,14 +493,14 @@ a:focus {
   color: #fff;
 }
 
-.carousel-caption h1{
-  text-transform: uppercase;  
+.carousel-caption h1 {
+  text-transform: uppercase;
 }
 
 .carousel-caption h2 {
   font-size: 2.5rem;
   font-weight: bold;
-    text-transform: uppercase; 
+  text-transform: uppercase;
 }
 
 .carousel-caption p {
@@ -633,9 +633,7 @@ a:focus {
   background-color: #32503e;
 }
 
-.position_text {
- 
-}
+.position_text {}
 
 .position_text_mod {
   position: relative;
@@ -1336,6 +1334,7 @@ hr {
   text-decoration: underline;
   color: rgb(138, 101, 16) !important;
 }
+
 .offer_date_right {
   text-decoration: none;
   margin: auto;
@@ -1343,6 +1342,7 @@ hr {
   color: rgb(138, 101, 16) !important;
   font-size: 30px;
 }
+
 .note_right {
   position: absolute;
   top: 8px;
@@ -1352,4 +1352,89 @@ hr {
   background-color: #c89b3f;
   font-size: 14px;
   font-weight: 700;
+}
+
+/* Preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  visibility: visible;
+}
+
+#preloader.loaded {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.preloader-content {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader-logo {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  animation: pulseLogo 1.5s infinite ease-in-out;
+}
+
+.preloader-plane-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: spinPlane 3s linear infinite;
+  z-index: 3;
+}
+
+.preloader-plane {
+  width: 50px;
+  position: absolute;
+  top: -25px;
+  /* Offset to circle around the logo */
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg);
+  /* Adjust rotation if needed based on image orientation */
+}
+
+@keyframes spinPlane {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulseLogo {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
 }
